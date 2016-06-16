@@ -1,0 +1,196 @@
+/**
+ * fullPage Pure Javascript v.0.0.4 (Alpha) - Not support given until Beta version.
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+html.fp-enabled,
+.fp-enabled body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  /*Avoid flicker on slides transitions for mobile phones #336 */
+
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+#superContainer {
+  position: relative;
+  height: 100%;
+  /* Touch detection for Windows 8 */
+
+  -ms-touch-action: none;
+  /* IE 11 on Windows Phone 8.1*/
+      touch-action: none;
+}
+.fp-section {
+  position: relative;
+  -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+     -moz-box-sizing: border-box; /* <=28 */
+          box-sizing: border-box;
+  height: 100%;
+}
+.fp-slide {
+  float: left;
+}
+.fp-slide,
+.fp-slidesContainer {
+  display: block;
+  height: 100%;
+}
+.fp-slides {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 100%;
+  -webkit-transition: all 0.3s ease-out; /* Safari<=6 Android<=4.3 */
+          transition: all 0.3s ease-out;
+}
+.fp-section.fp-table,
+.fp-slide.fp-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  table-layout: fixed;
+}
+.fp-tableCell {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.fp-slidesContainer {
+  position: relative;
+  float: left;
+}
+.fp-controlArrow {
+  position: absolute;
+  top: 50%;
+  z-index: 4;
+  width: 0;
+  height: 0;
+  margin-top: -38px;
+  border-style: solid;
+  cursor: pointer;
+}
+.fp-controlArrow.fp-prev {
+  left: 15px;
+  width: 0;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #ffffff transparent transparent;
+}
+.fp-controlArrow.fp-next {
+  right: 15px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent #ffffff;
+}
+.fp-scrollable {
+  overflow: scroll;
+}
+.fp-notransition {
+  -webkit-transition: none !important;
+          transition: none !important;
+}
+#fp-nav {
+  position: fixed;
+  top: 50%;
+  z-index: 100;
+  margin-top: -32px;
+  opacity: 1;
+}
+#fp-nav.right {
+  right: 17px;
+}
+#fp-nav.left {
+  left: 17px;
+}
+.fp-slidesNav {
+  position: absolute;
+  left: 50%;
+  z-index: 4;
+  opacity: 1;
+}
+.fp-slidesNav.bottom {
+  bottom: 17px;
+}
+.fp-slidesNav.top {
+  top: 17px;
+}
+#fp-nav ul,
+.fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+#fp-nav ul li,
+.fp-slidesNav ul li {
+  position: relative;
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+}
+.fp-slidesNav ul li {
+  display: inline-block;
+}
+#fp-nav ul li a,
+.fp-slidesNav ul li a {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span {
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  border-radius: 100%;
+}
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 4px;
+  height: 4px;
+  margin: -2px 0 0 -2px;
+  border: 0;
+  border-radius: 50%;
+  background: #333333;
+  -webkit-transition: all 0.1s ease-in-out;
+     -moz-transition: all 0.1s ease-in-out;
+       -o-transition: all 0.1s ease-in-out;
+          transition: all 0.1s ease-in-out;
+}
+#fp-nav ul li .fp-tooltip {
+  position: absolute;
+  top: -2px;
+  display: block;
+  overflow: hidden;
+  width: 0;
+  max-width: 220px;
+  color: #ffffff;
+  white-space: nowrap;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 14px;
+  opacity: 0;
+}
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+  width: auto;
+  -webkit-transition: opacity 0.2s ease-in;
+          transition: opacity 0.2s ease-in;
+  opacity: 1;
+}
+#fp-nav ul li .fp-tooltip.right {
+  right: 20px;
+}
+#fp-nav ul li .fp-tooltip.left {
+  left: 20px;
+}
