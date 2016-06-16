@@ -7,6 +7,17 @@
     transform: translateX(-12px);
   }
 
+  &--as {
+    width: 100%/12*10;
+    margin: 0 auto;
+    transform: translateY(110px);
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.44);
+
+    @media (max-width: 1400px) {
+      transform: none;
+    }
+  }
+
   &__title-container {
     display: flex;
     align-items: center;
@@ -23,11 +34,20 @@
     line-height: 53px;
   }
 
+  &--as &__title {
+    max-width: 430px;
+  }
+
   &__text {
     box-sizing: border-box;
     width: 100%/12*6;
     padding: 55px 8% 55px 12%;
     background-color: $white;
+
+    &--black {
+      background-color: $black;
+      color: $white;
+    }
 
     @media (max-width: 1500px) {
       padding: 55px 4% 55px 8%;
@@ -36,6 +56,10 @@
     @media (max-width: 1200px) {
       padding: 55px 4% 55px 4%;
     }
+  }
+
+  &--as &__text {
+    width: 100%/12*7;
   }
 
   p {

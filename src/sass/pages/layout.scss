@@ -12,4 +12,11 @@ body {
     display: flex;
     align-items: center;
   }
+
+  &--as {
+    background-image: url("../img/screen3.jpg");
+    background-position: top center;
+    display: flex;
+    align-items: center;
+  }
 }
