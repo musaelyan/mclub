@@ -2,29 +2,15 @@
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
-  transition: all $time ease;
+  transition: all 0.3 ease;
   text-align: center;
   vertical-align: top;
   text-decoration: none;
-  font-family: $open-sans;
+  font-family: $intro;
   font-size: 15px;
   font-weight: 400;
 
   &--blue {
-    padding-right: 20px;
-    padding-left: 20px;
-    border: 0;
-    background: $blue;
-    color: #ffffff;
-
-    @include btn;
-
-    &:hover {
-      background: darken($blue, 10);
-    }
-
-    &:active {
-      background: darken($blue, 5);
-    }
+    
   }
 }
