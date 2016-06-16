@@ -1,0 +1,22 @@
+/*=====================
+  Базовая типография
+=====================*/
+
+
+$open-sans-light: Arial, sans-serif;
+$open-sans: Arial, sans-serif;
+$open-sans-semibold: Arial, sans-serif;
+$open-sans-bold: Arial, sans-serif;
+
+
+
+body {
+  color: #000000;
+  font-family: $open-sans;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.center-text {
+  text-align: center;
+}

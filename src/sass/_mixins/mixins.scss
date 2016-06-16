@@ -1,0 +1,30 @@
+@mixin clearfix() {
+  &::after,
+  &::before {
+    display: table;
+    content: "";
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin ostrov() {
+  box-sizing: border-box;
+  padding: 15px 20px;
+  border: 1px solid $border;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+
+@mixin btn() {
+  font-family: $open-sans-semibold;
+  font-size: 13px;
+  line-height: 19px;
+  border-radius: 100px;
+  box-shadow: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
