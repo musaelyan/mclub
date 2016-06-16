@@ -123,13 +123,6 @@ module.exports = function(grunt) {
       }
     },
 
-    htmllint: {
-      options: {
-        force: true
-      },
-      all: ['build/**/*.html']
-    },
-
     svgmin: {
       options: {
         plugins: [{
@@ -241,7 +234,6 @@ module.exports = function(grunt) {
     'concat',
     'uglify',
     'imagemin',
-    'htmllint'
   ]);
 
   // только стили
