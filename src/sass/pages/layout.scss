@@ -1,3 +1,15 @@
 body {
-  
+
+}
+
+.section {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &--about {
+    background-image: url("../img/screen2.jpg");
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
 }

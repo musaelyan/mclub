@@ -1,0 +1,36 @@
+.about {
+  display: flex;
+  width: 100%/12*11.5;
+  transform: translateX(-60px);
+
+  &__title-container {
+    width: 100%/12*5;
+    padding: 90px 0;
+    background-color: $yellow;
+  }
+
+  &__title {
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: $intro;
+    font-size: 45px;
+    line-height: 53px;
+  }
+
+  &__text {
+    box-sizing: border-box;
+    width: 100%/12*6;
+    padding: 55px 12% 55px 8%;
+    background-color: $white;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .lead {
+    margin-bottom: 40px;
+  }
+}
