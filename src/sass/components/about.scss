@@ -7,6 +7,15 @@
     transform: translateX(-12px);
   }
 
+  &--single {
+    width: 100%;
+    transform: none;
+  }
+
+  &--single &__title-container  {
+    width: 100%;
+  }
+
   &--as {
     width: 100%/12*10;
     margin: 0 auto;
