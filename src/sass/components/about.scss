@@ -9,18 +9,25 @@
 
   &--single {
     width: 100%;
-    transform: none;
+    transform: translateX(-5%);
+
+    @media (max-width: 1200px) {
+      transform: translateX(-5%);
+    }
   }
 
-  &--single &__title-container  {
-    width: 100%;
+  &--single &__title-container {
+    width: 110%;
+    height: 500px;
+    background-color: $black;
+    color: $white;
   }
 
   &--as {
     width: 100%/12*10;
     margin: 0 auto;
-    transform: translateY(110px);
     box-shadow: 0 7px 10px rgba(0, 0, 0, 0.44);
+    transform: translateY(110px);
 
     @media (max-width: 1400px) {
       transform: none;
@@ -29,10 +36,11 @@
 
   &__title-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%/12*5;
     background-color: $yellow;
+
+    align-items: center;
+    justify-content: center;
   }
 
   &__title {
