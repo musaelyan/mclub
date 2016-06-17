@@ -1,8 +1,16 @@
-
-
 .section {
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+
+  &--intro {
+    background-image: url("../img/screen1.jpg");
+    background-position: top center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+  }
 
 
   &--about {
@@ -25,5 +33,10 @@
     display: flex;
 
     align-items: center;
+  }
+
+  &--form {
+    background: #111418;
+    color: #f1f1f1;
   }
 }

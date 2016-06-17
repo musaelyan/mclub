@@ -1,0 +1,102 @@
+.intro {
+
+  &__title {
+    font-size: 72px;
+    font-weight: normal;
+    line-height: 80px;
+    margin: 0;
+    color: #000;
+    font-family: $intro;
+    text-transform: uppercase;
+  }
+
+  &__date {
+    font-size: 56px;
+    font-weight: normal;
+    line-height: 60px;
+    margin: 0;
+    color: #000;
+    font-family: $intro;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    @media (max-width: 1500px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 1200px) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__promo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 70px;
+    padding-left: 70px;
+    @media (max-width: 1500px) {
+      margin-top: 50px;
+    }
+    @media (max-width: 1200px) {
+      margin-top: 30px;
+    }
+  }
+
+  &__counter {
+    margin-right: 95px;
+    width: 310px;
+
+  }
+
+  &__counter-nubmers {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7px;
+    @media (max-width: 1500px) {
+      padding-top: 4px;
+    }
+
+    @media (max-width: 1200px) {
+      padding-top: 2px;
+    }
+  }
+
+  &__counter-nubmer {
+    font-size: 64px;
+    font-weight: normal;
+    line-height: 64px;
+    color: #000;
+    font-family: $intro;
+    text-transform: uppercase;
+  }
+
+  &__counter-label {
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    color: #000;
+  }
+
+}
+
+.intro__scroll-link {
+  font-size: 0;
+  background: url("../img/icon-mouse.png") no-repeat;
+  display: block;
+  height: 96px;
+  width: 33px;
+  margin: 40px auto 33px;
+  @media (max-width: 1500px) {
+    margin: 30px auto 23px;
+  }
+
+  @media (max-width: 1200px) {
+    margin: 20px auto 13px;
+  }
+  @media
+    (min-resolution: 144dpi),
+    (min-resolution: 1.5dppx) {
+     .intro__scroll-link {
+      background-image: url("../img/icon-mouse@2x.png");
+    }
+  }
+}

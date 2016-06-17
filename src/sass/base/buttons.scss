@@ -2,15 +2,17 @@
   display: inline-block;
   box-sizing: border-box;
   cursor: pointer;
-  transition: all 0.3 ease;
+  transition: background-color .1s linear;
   text-align: center;
   vertical-align: top;
   text-decoration: none;
-  font-family: $intro;
-  font-size: 15px;
-  font-weight: 400;
-
-  &--blue {
-    
+  font-size: 20px;
+  line-height: 39px;
+  background-color: $yellow;
+  color: #000;
+  padding: 22px 90px;
+  &:hover {
+    background-color: #ffca28;
   }
+
 }
