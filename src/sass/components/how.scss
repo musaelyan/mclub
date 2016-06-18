@@ -1,20 +1,86 @@
 .how {
-  h3 {
-    margin: 0;
-    margin-bottom: 10px;
-  }
 
   p {
     margin: 0;
     margin-bottom: 20px;
+    @media (max-width: 1500px) {
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 15px;
+    }
+    @media (max-width: 1200px) {
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 10px;
+    }
   }
 
   ul {
     list-style: square;
     padding: 0 0 0 20px;
+    @media (max-width: 1200px) {
+      margin: 0;
+      margin-top: 3px;
+    }
   }
 
   li {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
+    @media (max-width: 1500px) {
+      margin-bottom: 5px;
+      font-size: 18px;
+      line-height: 25px;
+    }
+
+    @media (max-width: 1200px) {
+      margin-bottom: 2px;
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
+}
+
+.how__title {
+  margin: 0;
+  margin-bottom: 10px;
+  @media (max-width: 1500px) {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
+  @media (max-width: 1200px) {
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 0px;
+  }
+
+  &--mini {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+.box {
+  background: $yellow;
+  margin-top: 25px;
+  padding: 25px 25px;
+  color: #000;
+  text-transform: uppercase;
+  font-family: Intro,Arial,sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 25px;
+  @media (max-width: 1500px) {
+    margin-top: 25px;
+    padding: 22px;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  @media (max-width: 1200px) {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }

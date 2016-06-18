@@ -69,7 +69,6 @@ html.fp-enabled,
   z-index: 4;
   width: 0;
   height: 0;
-  margin-top: -38px;
   border-style: solid;
   cursor: pointer;
 }
@@ -94,7 +93,6 @@ html.fp-enabled,
 #fp-nav {
   position: fixed;
   top: 50%;
-  transform: translateY(-50%);
   z-index: 100;
   opacity: 1;
 }

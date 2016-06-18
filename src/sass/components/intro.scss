@@ -8,6 +8,14 @@
     color: #000;
     font-family: $intro;
     text-transform: uppercase;
+    @media (max-width: 1500px) {
+      font-size: 65px;
+      line-height: 73px;
+    }
+    @media (max-width: 1200px) {
+      font-size: 60px;
+      line-height: 68px;
+    }
   }
 
   &__date {
@@ -20,10 +28,14 @@
     text-transform: uppercase;
     margin-bottom: 40px;
     @media (max-width: 1500px) {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
+      font-size: 54px;
+      line-height: 54px;
     }
     @media (max-width: 1200px) {
       margin-bottom: 20px;
+      font-size: 50px;
+      line-height: 54px;
     }
   }
 
