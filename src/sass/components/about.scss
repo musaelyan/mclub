@@ -11,10 +11,11 @@
   &__title-container {
     display: flex;
     width: 100%/12*5;
+    padding: 5%;
     background-color: $yellow;
+
     align-items: center;
     justify-content: center;
-    padding: 5%;
   }
 
   &--single {
@@ -33,10 +34,10 @@
   &--single &__title-container {
     width: 110%;
     height: 500px;
+    padding-right: 5%;
+    padding-left: 13%;
     background-color: $black;
     color: $white;
-    padding-left: 13%;
-    padding-right: 5%;
     @media (max-width: 1500px) {
       height: 400px;
     }
@@ -100,7 +101,6 @@
 
   &--as &__text {
     width: 100%;
-
   }
 
   p {

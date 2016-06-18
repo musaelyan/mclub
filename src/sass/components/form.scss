@@ -1,5 +1,6 @@
 .form {
   display: flex;
+
   align-items: center;
 
   &__left {
@@ -8,43 +9,43 @@
   }
 
   &__title {
+    margin: 0;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: $intro;
     font-size: 45px;
     font-weight: normal;
     line-height: 53px;
-    margin: 0;
-    font-family: $intro;
-    text-transform: uppercase;
-    margin-bottom: 50px;
     @media (max-width: 1500px) {
+      margin-bottom: 30px;
       font-size: 40px;
       line-height: 47px;
-      margin-bottom: 30px;
     }
     @media (max-width: 1200px) {
+      margin-bottom: 20px;
       font-size: 35px;
       line-height: 43px;
-      margin-bottom: 20px;
     }
   }
 
   &__title2 {
+    margin: 0;
+    margin-bottom: 10px;
+    color: $yellow;
+    text-transform: uppercase;
+    font-family: $intro;
     font-size: 30px;
     font-weight: normal;
     line-height: 30px;
-    color: $yellow;
-    margin: 0;
-    font-family: $intro;
-    text-transform: uppercase;
-    margin-bottom: 10px;
     @media (max-width: 1500px) {
+      margin-bottom: 7px;
       font-size: 27px;
       line-height: 27px;
-      margin-bottom: 7px;
     }
     @media (max-width: 1200px) {
+      margin-bottom: 5px;
       font-size: 24px;
       line-height: 24px;
-      margin-bottom: 5px;
     }
   }
 
@@ -60,15 +61,15 @@
       line-height: 30px;
     }
   }
-
 }
 
 .form-block {
   &--1 {
-    width: 95%;
     box-sizing: border-box;
-    align-self: flex-start;
+    width: 95%;
     margin-bottom: 80px;
+
+    align-self: flex-start;
     @media (max-width: 1500px) {
       margin-bottom: 70px;
     }
@@ -79,18 +80,20 @@
   }
 
   &--2 {
-    width: 79%;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    align-self: flex-end;
     position: relative;
+    display: flex;
+    box-sizing: border-box;
+    width: 79%;
+
+    align-items: center;
+    align-self: flex-end;
+    justify-content: space-between;
     @media (max-width: 1500px) {
       width: 81%;
     }
     @media (max-width: 1200px) {
       width: 100%;
+
       align-self: flex-start;
     }
   }
@@ -107,11 +110,11 @@
 
   &__yellow-line {
     position: absolute;
-    width: 8px;
-    background: $yellow;
-    height: 110%;
-    left: 0;
     top: 50%;
+    left: 0;
+    width: 8px;
+    height: 110%;
+    background: $yellow;
     transform: translateY(-50%);
   }
 
