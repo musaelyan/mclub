@@ -1,3 +1,62 @@
 .form {
-  
+  display: flex;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 53px;
+    margin: 0;
+    font-family: $intro;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  &__title2 {
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 30px;
+    color: $yellow;
+    margin: 0;
+    font-family: $intro;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__description2 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+}
+
+.form-block {
+  &--1 {
+    width: 95%;
+    box-sizing: border-box;
+    align-self: flex-start;
+    margin-bottom: 80px;
+  }
+
+  &--2 {
+    width: 78%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: flex-end;
+  }
+
+  &__yellow-line {
+    width: 8px;
+    background: $yellow;
+    height: 192px;
+  }
+
+  &__content {
+    margin-left: 25px;
+  }
 }

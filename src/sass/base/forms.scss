@@ -19,9 +19,12 @@ button {
   cursor: pointer;
 }
 
-textarea {
-  resize: none;
+
+
+.inpt-box {
+  margin: 0 auto 10px;
 }
+
 
 .inpt-box .inpt {
     font-weight: 300;
@@ -43,4 +46,13 @@ textarea {
   color: #d7d7d7;
   transition: border-color .1s linear;
   background: #111418;
+}
+
+textarea {
+  resize: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  resize: none;
+  font-size: 16px;
+  transition: height .1s linear,border-bottom-color .1s linear;
 }
