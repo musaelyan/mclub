@@ -9,9 +9,6 @@ $(document).ready(function() {
     'navigationColor': '#000000',
     'verticalCentered': false
   });
-});
-
-(function() {
 
   // прокрутка к последнему экрану
   var toLast = document.querySelectorAll('.to-last');
@@ -22,7 +19,7 @@ $(document).ready(function() {
     toLast.forEach(function(item) {
       item.addEventListener('click', function(event) {
         event.preventDefault();
-        fullpage.moveTo(5);
+        $.fn.fullpage.moveTo(5);
       });
     });
   }
@@ -33,12 +30,11 @@ $(document).ready(function() {
   if (toNext) {
     toNext.addEventListener('click', function(event) {
       event.preventDefault();
-      fullpage.moveTo(2);
+      $.fn.fullpage.moveTo(2);
     });
   }
 
-})();
-
+});
 
 (function(){
 
